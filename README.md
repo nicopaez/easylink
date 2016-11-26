@@ -37,3 +37,8 @@ You've created a new ASP.NET Core project. [Learn what's new](https://go.microso
 *   [Publish to Microsoft Azure Web Apps](https://go.microsoft.com/fwlink/?LinkID=398609)
 
 We would love to hear your [feedback](https://go.microsoft.com/fwlink/?LinkId=518015)
+
+
+To run inside vagrant: 
+dotnet run --server.urls=http://0.0.0.0:5000
+dotnet ef database update
