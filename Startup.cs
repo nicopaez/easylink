@@ -80,8 +80,14 @@ namespace EasyLinks
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    "goto",
+                    "goto/{target}",
+                    new { controller = "Goto", Action="Index" });
+                    
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                
             });
         }
     }

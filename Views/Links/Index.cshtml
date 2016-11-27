@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Links";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<table>
+    <thead>
+        <th>Shortcut</th>
+        <th>Url</th>
+    <thead>
+    <tbody>
+        @foreach(var link in @Model)
+        {
+            <tr>
+                <td>@link.ShortCut</td>
+                <td><a href="@link.Url" target="_blank">@link.Url</a></td>
+            </tr>
+        }
+    </tbody>
+<table>
